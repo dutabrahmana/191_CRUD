@@ -10,11 +10,15 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'Duta123.',
+  database: 'mahasiswa',
+  port: 3309
+});
 
-
-
-
-
-
-  
